@@ -25,7 +25,8 @@ def check_current_time() -> str:
     now = datetime.now()
     hora_actual = now.hour
     
-    if HORA_APERTURA <= hora_actual < HORA_CIERRE:
+    # ajustar validaciones para horario GMT+0
+    if (HORA_APERTURA <= hora_actual < 24) or (0 <= hora_actual < HORA_CIERRE):
         return "ABIERTO"
     else:
         return f"CERRADO. Lo sentimos, estamos cerrados en este momento. Puedes visitarnos en nuestro horario: {HORARIO}."
