@@ -15,7 +15,7 @@ MENU = {
 }
 HORARIO = "Lunes a Domingo: 10:00 AM - 10:00 PM"
 HORA_APERTURA = 16  # 10:00 AM CST but GMT+0 is 16:00
-HORA_CIERRE = 6    # 10:00 PM CST but GMT+0 is 04:00 next day
+HORA_CIERRE = 4    # 10:00 PM CST but GMT+0 is 04:00 next day
 
 @tool
 def check_current_time() -> str:
