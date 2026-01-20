@@ -15,7 +15,7 @@ MENU = {
 }
 HORARIO = "Lunes a Domingo: 10:00 AM - 10:00 PM"
 HORA_APERTURA = 10  # 10:00 AM
-HORA_CIERRE = 22    # 10:00 PM
+HORA_CIERRE = 24    # 10:00 PM
 
 @tool
 def check_current_time() -> str:
@@ -24,8 +24,6 @@ def check_current_time() -> str:
     """
     now = datetime.now()
     hora_actual = now.hour
-
-    return "ABIERTO"
     
     if HORA_APERTURA <= hora_actual < HORA_CIERRE:
         return "ABIERTO"
