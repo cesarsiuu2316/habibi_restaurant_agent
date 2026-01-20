@@ -14,8 +14,8 @@ MENU = {
     "agua": {"precio": 1.00, "categoria": "bebida", "nombre": "Agua"}
 }
 HORARIO = "Lunes a Domingo: 10:00 AM - 10:00 PM"
-HORA_APERTURA = 10  # 10:00 AM
-HORA_CIERRE = 24    # 10:00 PM
+HORA_APERTURA = 16  # 10:00 AM CST but GMT+0 is 16:00
+HORA_CIERRE = 6    # 10:00 PM CST but GMT+0 is 04:00 next day
 
 @tool
 def check_current_time() -> str:
